@@ -1,0 +1,182 @@
+.renting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.car-details-card, .rental-details-card {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.car-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 4px;
+}
+
+.ant-descriptions-item-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.ant-card-head-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ant-form-item-label label {
+    font-weight: 500;
+}
+
+.ant-select-selector, .ant-picker {
+    height: 40px !important;
+}
+
+.ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.ant-divider {
+    margin: 16px 0;
+}
+
+.ant-space {
+    width: 100%;
+}
+
+.ant-drawer-content {
+    padding: 20px;
+}
+
+.ant-drawer-body {
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .renting-container {
+        padding: 10px;
+    }
+
+    .ant-col {
+        margin-bottom: 16px;
+    }
+}
+
+.ant-radio-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 8px;
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background: #1890ff;
+    border-color: #1890ff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .ant-col-8 {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
+.insurance-radio-group {
+    width: 100%;
+}
+
+.insurance-radio-group .ant-radio-button-wrapper {
+    border-radius: 4px !important;
+    margin: 0 4px;
+    text-align: center;
+}
+
+.insurance-radio-group .ant-radio-button-wrapper:first-child {
+    margin-left: 0;
+}
+
+.insurance-radio-group .ant-radio-button-wrapper:last-child {
+    margin-right: 0;
+}
+
+.insurance-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.insurance-description {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.totalSum {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.totalSum-text {
+    margin-bottom: 8px;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.payment-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+}
+
+.stripe-button {
+    background-color: #635bff;
+}
+
+@media (max-width: 768px) {
+    .payment-buttons {
+        flex-direction: column;
+    }
+
+    .payment-button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .payment-buttons {
+        flex-direction: row;
+    }
+
+    .payment-button {
+        width: auto;
+    }
+}
